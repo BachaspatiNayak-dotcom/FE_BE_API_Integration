@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management System</h1>
+
+    <div class="container">
+        <section class="form-section">
+            <h2>Register Student</h2>
+            
+            <form action="" id="studentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+
+                <label for="course">Course</label>
+                <select name="" id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="javaScript">JavaScript</option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="records-section">
+            <input type="text" id="search" placeholder="Search students by name..." oninput="searchStudent()">
+            <h2>Student Records</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
